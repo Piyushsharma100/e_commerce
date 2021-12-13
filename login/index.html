@@ -1,0 +1,33 @@
+<! DOCTYPE html>
+<body lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validated Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+<div class="container">
+
+  <h1 class="label">User Login</h1>
+
+  <form class="login_form" action="second.html" name="form"  onsubmit="return validation()">
+
+      <div class ="font">Email</div>
+      <input autocomplete="off" type="text" placeholder="Email" name="email"id="textInput">
+      <div id="email_error">Invalid email</div></br></br>
+
+      <div class ="font2">Password</div>
+      <input type="password" name="password" placeholder="password">
+      <div id="pass_error">Invalid password</div>
+
+      <button type="submit">Login</button>
+  </form>
+      
+</div>
+
+
+<script src="valid.js"></script>
+</body>
+</html>

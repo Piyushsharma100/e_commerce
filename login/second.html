@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="second.css" />
+  </head>
+
+  <body>
+      <center><h1> User Registration</h1><center>
+    <center>
+      <table border="4">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <td><input type="text" name="fname" id="fname" placeholder="First Name"></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Last Name</th>
+            <td><input type="text" name="lname" id="lname" placeholder="Last Name"></td>
+          </tr>
+
+          <tr>
+            <th>Email</th>
+            <td><input type="text" name="email" id="email"placeholder="Email" ></td>
+          </tr>
+
+          <tr>
+            <th>Age</th>
+            <td><input type="text" name="age" id="age" placeholder="Age" ></td>
+          </tr>
+          <tr id="btna">
+            <td colspan="2">
+              <input
+                type="button"
+                name="button"
+                id="btn"
+                value="Save"
+                onclick="SaveRow()"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table border="5" id="show">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+      </table>
+    </center>
+
+
+
+<button type="button" id="login" onclick="location.href='index.html';">
+      log out
+    </button>
+    <button type="button" id="blog" onclick="location.href='frontCss.html';">
+      My Blog
+    </button>
+    <script src="second.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+body {
+  background: url("Frost.jpg");
+}
+table {
+  margin-top: 50px;
+  text-align: center;
+  background: rgb(19, 90, 112);
+  color: #fff;
+  width: 1000px;
+}
+#show th,
+#show td {
+  padding: 13px;
+}
+#btna td input {
+  width: 100%;
+}
+h1 {
+  color: darkturquoise;
+}
+input {
+  width: 500px;
+}
+#btn {
+  width: 10px;
+  background-color: rgb(177, 209, 221);
+  color: darkblue;
+  font-size: large;
+}
+#login {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: outset;
+  border-color: rgb(38, 127, 134);
+}
+
+#blog {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  border: outset;
+  border-color: rgb(38, 127, 134);
+}

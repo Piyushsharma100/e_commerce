@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+/*navigation bar*/
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #04aa6d;
+  z-index: 9;
+}
+
+#name {
+  color: #04492f;
+  font-weight: bold;
+  cursor: default;
+}
+
+.nav div {
+  margin-left: 10px;
+  vertical-align: center;
+}
+
+.nav {
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  left: 0;
+}
+
+/*brand logo*/
+
+.brand-logo {
+  height: 60px;
+  left: 0%;
+}
+
+/*navigation item*/
+
+.nav-items {
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+}
+
+/*search*/
+
+.search {
+  width: 600px;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.search-box {
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #d1d1d1;
+  text-transform: capitalize;
+  background: none;
+  color: black;
+  outline: none;
+}
+
+.search-btn {
+  width: 20%;
+  height: 40px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgb(3, 194, 115);
+  color: white;
+  text-transform: capitalize;
+  font-size: 15px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.search-btn:hover {
+  background: rgb(2, 133, 78);
+}
+
+.search-box::placeholder {
+  color: #a9a9a9;
+}
+
+.nav-items a {
+  margin-left: 20px;
+}
+
+.nav-items a img {
+  width: 30px;
+}
+
+.links-container {
+  width: 50%;
+  display: flex;
+  padding: 10px 10vw;
+  justify-content: center;
+  list-style: none;
+}
+
+.link {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: capitalize;
+  padding: 0 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #383838;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background: #04aa6d;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Button */
+
+.homebtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.homedown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.home-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.home-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.home-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+
+.home:hover .home-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.home:hover .homebtn {
+  background-color: #3e8e41;
+}
+
+/* Dropdown Button */
+
+.womenbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.womendown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.table-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.table-content a {
+  color: black;
+  padding: 4px 0px 4px 0px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.table-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+
+.women:hover .table-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.women:hover .womenbtn {
+  background-color: #3e8e41;
+}
+
+/* Dropdown Button */
+
+.menbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.mendown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Show the dropdown menu on hover */
+
+.men:hover .table-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.men:hover .menbtn {
+  background-color: #3e8e41;
+}
+
+/* Dropdown Button */
+
+.kidsbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.kidsdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Show the dropdown menu on hover */
+
+.kids:hover .table-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.kids:hover .kidsbtn {
+  background-color: #3e8e41;
+}
+
+/* Dropdown Button */
+
+.accessoriesbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.accessoriesdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Show the dropdown menu on hover */
+
+.accessories:hover .table-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.accessories:hover .accessoriesbtn {
+  background-color: #3e8e41;
+}
+
+table {
+  padding: 10px;
+  border-spacing: 15px;
+  background-color: white;
+}
+
+table th {
+  padding-top: 0px;
+  padding-bottom: 5px;
+  text-align: left;
+  margin: 150px;
+  color: #04aa6d;
+}
+
+.login-btn {
+  background-color: #03c273;
+  border: none;
+  color: white;
+  margin-left: 15px;
+  padding: 12px 17px 12px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
